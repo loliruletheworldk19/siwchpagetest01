@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+
+    <div class="body-1">
+
+        <div class="bgd_page_1">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+            <img src="https://haycafe.vn/wp-content/uploads/2022/02/Tai-anh-gai-xinh-Viet-Nam-de-thuong.jpg" alt="" class="img-111">
+        </div>
+        <div id="testx">PAGE-01 DISPLAY</div>
+
+        <div class="btn_01">
+            <div class="show-light" unselectable="on">
+                <p id="text2A">
+                    Click to come back index
+                </p>
+                <p id="text2B" style="display:none">
+                    Click to come back index
+                </p>
+            </div>
+        
+            <label class="switch">
+                <input type="checkbox" id="CheckBox2" checked="checked" onclick="myFunctionlight1()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="btn_02">
+            <div class="show-light" unselectable="on">
+                <p id="text4A" style="display:none">
+                    Click to come page02
+                </p>
+                <p id="text4B">
+                    Click to come page02
+                </p>
+            </div>
+        
+            <label class="switch">
+                <input type="checkbox" id="CheckBox4" onclick="myFunctionlight2()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="text-1">
+
+            <h1>
+                KIEN THUC KINH TE
+            </h1>
+            <p>
+                Một 'cò đất' 19 tuổi đã rao bán rạp hát Đồng Khởi là tài sản nhà nước, với giá 55 tỉ đồng.
+            </p>
+            <p>
+                Ngày 28.4, Phòng An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao Công an tỉnh Bến Tre đã mời N.Q.B (19 tuổi, ngụ P.8, TP.Bến Tre) đến làm việc để làm rõ hành vi.
+            </p>
+            <p>
+                Trước đó, ngày 30.3, B. sử dụng tài khoản Facebook cá nhân rao bán rạp hát Đồng Khởi, kèm theo ảnh công viên Đồng Khởi, tọa lạc trên địa bàn TP.Bến Tre, với giá 55 tỉ đồng. Rạp hát này thuộc sở hữu nhà nước, do Sở VH-TT-DL Bến Tre quản lý.
+            </p>
+            <p>
+                Xét thấy B. mới vi phạm lần đầu, hoàn cảnh gia đình khó khăn và thành khẩn trong quá trình làm việc nên không xử phạt vi phạm hành chính mà áp dụng biện pháp giáo dục, buộc cam kết không tái phạm.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="siwch-test">
+
+        <a href="./index.html">HOME</a>
+        <a href="./page01.html">PAGE-01</a>
+        <a href="./page02.html">PAGE-02</a>
+
+    </div>
+
+
+
+    <script>
+        function myFunctionlight1() {
+    
+    var CheckBox2 = document.getElementById("CheckBox2");
+    var text2A = document.getElementById("text2A");
+    var text2B = document.getElementById("text2B");
+    if (CheckBox2.checked == true)
+    {
+        text2A.style.display = "block";
+        text2B.style.display = "none";
+    } 
+    else 
+    {
+        text2A.style.display = "none";
+        text2B.style.display = "block";
+        window.location = "index.html";
+    };
+}  
+    </script>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
